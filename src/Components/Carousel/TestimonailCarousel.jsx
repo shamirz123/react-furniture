@@ -3,25 +3,25 @@ import { Carousel } from 'primereact/carousel';
 import 'primereact/resources/themes/saga-blue/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import image1 from '/assets/img/Testimonial/author1.png';
+import image1 from '/assets/img/Hiral-Valia.webp';
 import image2 from '/assets/img/Testimonial/author2.png';
 import image3 from '/assets/img/Testimonial/author1.png';
 
 const TestimonialCarousel = () => {
     const products = [
         {
-            name: "Shahmeer is an exceptionally talented programmer—smart, reliable, and professional. You won't be disappointed",
-            description: 'Rodolfo E. Shannon',
+            name: "... their variety of products, range and comparatively cheaper price. Service provided was also good.",
+            description: 'Ahzaz Naseer',
             image: image1
         },
         {
-            name: 'Shahmeer efficiently manages our outdated website, providing quick and invaluable support. We would be lost without him',
-            description: 'Kenneth J. Dutton',
+            name: 'since the last 4 years We appreciate their prompt service and so far we have faced no complaints with their furniture.',
+            description: 'Abdur Rehman',
             image: image2
         },
         {
             name: 'Shahmeer efficiently manages our outdated website, providing quick and invaluable support. We would be lost without him',
-            description: 'Kenneth J. Dutton',
+            description: 'Maham ',
             image: image3
         },
     ];
@@ -51,7 +51,7 @@ const TestimonialCarousel = () => {
             <Carousel
                 value={products}
                 numVisible={2}
-                numScroll={1} 
+                numScroll={1}
                 responsiveOptions={responsiveOptions}
                 className="custom-carousel"
                 circular

@@ -1,80 +1,128 @@
-import React from 'react'
+import React from 'react';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { Link } from 'react-router-dom';
+import '../main.css'
 
 function Services() {
+    // Define an array of objects containing image URLs and other information
+    const images = [
+        {
+            id: 1,
+            url: '/assets/img/slider-chair.webp',
+            title: 'Chair',
+            desc: 'Sleek and comfortable chair for modern living spaces.'
+        },
+        {
+            id: 2,
+            url: '/assets/img/slider-sofa.webp',
+            title: 'Sofa',
+            desc: 'Luxurious sofa for stylish relaxation'
+        },
+        {
+            id: 3,
+            url: '/assets/img/slider-bed.webp',
+            title: 'Bed',
+            desc: 'Elegant bed frame for a cozy bedroom ambiance.'
+        },
+
+    ];
+
     return (
         <>
-
             <div className='container'>
-                <div className="services-main">
-                    <p className='text-center'>Popular Services</p>
-                    <h1 className='text-center'>
-                        My <span>Special Service</span> For your
-                        <h2> Business Development</h2>
-                    </h1>
-                    <div className="row">
-                        <div className="col-lg-6 col-md-12 col-sm-12">
-                            <div className="p-3 services-detail ">
-                                <div className="p-2 ">
-                                    <span>01.</span>
-                                </div>
-                                <div className="p-2 ">
-                                    <h4>Custom Website Development:</h4>
-                                    <p>Offer custom website development services tailored to the specific needs and goals of businesses.</p>
-                                </div>
-                                <div className="detail-btn-div">
-                                <a className="details-btn" href="/#"><i className="fas fa-arrow-right"></i></a>
+                <div className="">
+                    <Carousel
+                        additionalTransfrom={0}
+                        arrows
+                        autoPlaySpeed={3000}
+                        centerMode={false}
+                        className=""
+                        containerClass="container-with-dots"
+                        dotListClass=""
+                        draggable
+                        focusOnSelect={false}
+                        infinite
+                        itemClass=""
+                        keyBoardControl
+                        minimumTouchDrag={80}
+                        pauseOnHover
+                        renderArrowsWhenDisabled={false}
+                        renderButtonGroupOutside={false}
+                        renderDotsOutside={false}
+                        responsive={{
+                            desktop: {
+                                breakpoint: {
+                                    max: 3000,
+                                    min: 1024,
+                                },
+                                items: 3,
+                                partialVisibilityGutter: 40,
+                            },
+                            mobile: {
+                                breakpoint: {
+                                    max: 464,
+                                    min: 0,
+                                },
+                                items: 1,
+                                partialVisibilityGutter: 30,
+                            },
+                            tablet: {
+                                breakpoint: {
+                                    max: 1024,
+                                    min: 464,
+                                },
+                                items: 2,
+                                partialVisibilityGutter: 30,
+                            },
+                        }}
+                        rewind={false}
+                        rewindWithAnimation={false}
+                        rtl={false}
+                        shouldResetAutoplay
+                        showDots={false}
+                        sliderClass=""
+                        slidesToSlide={1}
+                        swipeable
+                    >
+                        {/* Use map() to render each image */}
+                        {images.map((image) => (
+                            <div key={image.id}>
+                                <div className="work1 ml-2 mr-2">
+                                    <div className="image-box">
+                                        <div className="name-desc hover-1 image-box rounded">
+                                            <div className="img align-items-center justify-content-center rounded">
+                                                <img className="" src={image.url} alt={image.title} />
+                                                <a href="#" className="icon d-flex align-items-center justify-content-center">
+                                                    <span className="ion-ios-search"></span>
+                                                </a>
+                                            </div>
+                                            <div className="hover-1-content p-2">
+                                            <div className="sub-txt-desc float-left pl-2">
+                                                    {image.title}
+                                                </div>
+                                                <br />
+                                                <div className="sub-txt-desc float-left pl-2">
+                                                    {image.desc}
+                                                </div>
+                                                <br />
+                                                <p className="hover-1-description float-left mb-0">
+                                                    <Link to="">
+                                                        <strong>Learn More</strong>{" "}
+                                                        <i className="fa fa-angle-double-right"></i>{" "}
+                                                    </Link>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-lg-6 col-md-12 col-sm-12">
-                             <div className="p-3 services-detail ">
-                                <div className="p-2 ">
-                                    <span>02.</span>
-                                </div>
-                                <div className="p-2 ">
-                                    <h4>Mobile App Development:</h4>
-                                    <p>Develop mobile applications to complement websites or offer standalone services.</p>
-                                </div>
-                                <div className="detail-btn-div">
-                                <a className="details-btn" href="/#"><i className="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-12 col-sm-12">
-                             <div className="p-3 services-detail ">
-                                <div className="p-2 ">
-                                    <span>03.</span>
-                                </div>
-                                <div className="p-2 ">
-                                    <h4>Performance Optimization:</h4>
-                                    <p>Optimize website and application performance to ensure fast loading times.</p>
-                                </div>
-                                <div className="detail-btn-div">
-                                <a className="details-btn" href="/#"><i className="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-6 col-md-12 col-sm-12">
-                             <div className="p-3 services-detail ">
-                                <div className="p-2 ">
-                                    <span>04.</span>
-                                </div>
-                                <div className="p-2 ">
-                                    <h4>User Experience (UX) Design:</h4>
-                                    <p>Focus on creating a positive and intuitive user experience for websites and applications.</p>
-                                </div>
-                                <div className="detail-btn-div">
-                                <a className="details-btn" href="/#"><i className="fas fa-arrow-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                        ))}
+                    </Carousel>
                 </div>
             </div>
         </>
-
     )
 }
 
-export default Services
+export default Services;

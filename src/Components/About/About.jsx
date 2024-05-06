@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { TiTick } from "react-icons/ti";
 import { IoMailOutline } from "react-icons/io5";
 import { LuPhone } from "react-icons/lu";
 import { FaCheck } from "react-icons/fa";
 
 function About() {
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
+  const toggleDescription = () => {
+    setShowFullDescription(!showFullDescription);
+  };
+
   return (
     <>
       <div id="about" className="container">
@@ -27,13 +33,22 @@ function About() {
                     />
                   </div>
                 </div>
-                <p>
-                Welcome to Life Standard Furniture, where craftsmanship meets passion. We are more than just a furniture store; we are curators of style and comfort, dedicated to transforming houses into homes. Our journey began with a simple idea: to provide exquisite furniture pieces that inspire and endure.
-                </p>
 
-                <button>See More</button>
+                <p>
+                  Welcome to Life Standard Furniture, where craftsmanship meets passion. We are more than just a furniture store; we are curators of style and comfort, dedicated to transforming houses into homes. Our journey began with a simple idea: to provide exquisite furniture pieces that inspire and endure. 
+                </p>
+                {showFullDescription ? (
+                  <p>
+                    Over the years, we have honed our craft, sourcing the finest materials and collaborating with skilled artisans to bring your vision to life. At Life Standard Furniture, we believe in the power of connection—between people and their surroundings. Our collections are designed to evoke emotions, spark conversations, and create memories that last a lifetime.
+                    Join us on this journey of discovery and let us help you turn your living spaces into timeless expressions of elegance and sophistication.
+                  </p>
+                ) : null}
+
+                <button onClick={toggleDescription}>
+                  {showFullDescription ? 'See Less' : 'See More'}
+                </button>
               </div>
-        
+
             </div>
 
             <div className="col-lg-6 col-md-12 col-sm-13">

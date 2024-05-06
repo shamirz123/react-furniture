@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { RiCopyrightLine } from "react-icons/ri";
+
 
 function Sociallinks() {
     const [isvisible, setVisible] = useState(false);
@@ -15,13 +17,12 @@ function Sociallinks() {
             <div className="container">
                 <div className="footer-bottom "><div className="container"><div className="row">
                     <div className="col-lg-6">
-                        <div className="copyright-section"><p>Copyright <span>@2024</span>,  All Rights Reserved</p></div>
+                        <div className="copyright-section"><span className='mr-2'><RiCopyrightLine/></span><p className='d-inline'>Copyright <span> 2024</span>,  All Right Reserved By Life Standard Furniture</p></div>
                     </div>
 
-                    <div className="col-lg-6 text-lg-end"><ul className="footer-bottom-nav"><li><a href="https://github.com/shamirz123">Github</a></li>
-                        <li><a href="https://www.facebook.com/shamir.zubair">Facebook</a></li>
-                        <li><a href="https://github.com/shamirz123">Instagram</a></li>
-                        <li><a href="https://www.linkedin.com/in/shahmeer-zubair-3590a0273/">LinkedIn</a></li>
+                    <div className="col-lg-6 text-lg-end"><ul className="footer-bottom-nav"><li><a href="https://www.youtube.com/@LifestandardFurniture">Youtube</a></li>
+                        <li><a href="https://www.facebook.com/share/7LdhZBuNThcNp6m5/?mibextid=LQQJ4d">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/_.lifestandard._?igsh=MW01OXMyeG5pbXZxeA%3D%3D&utm_source=qr">Instagram</a></li>
                     </ul>
                     </div>
                 </div>

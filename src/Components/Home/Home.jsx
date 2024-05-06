@@ -27,21 +27,22 @@ function Home() {
                 <Services />
             </section>
 
-            <section className='skill-section' id='skills'>
-                <Skill />
-            </section>
-            <section className='testimonial-section' id='testimonial'>
-                <Testimonial />
-            </section>
-            <section className='project-sections' id='projects'>
-                <Project />
-            </section>
-            <section className='price-section' id='pricing'>
-                <Pricing />
-            </section>
+           
+
+        
             <section className='contact-form-section'>
                 <Contactform />
             </section>
+            
+            {/* <section className='testimonial-section' id='testimonial'>
+                <Testimonial />
+            </section> */}
+            {/* <section className='price-section' id='pricing'>
+                <Pricing />
+            </section> */}
+            {/* <section className='project-sections' id='projects'>
+                <Project />
+            </section> */}
             <section className='footer-section'>
                 <Footer />
             </section>

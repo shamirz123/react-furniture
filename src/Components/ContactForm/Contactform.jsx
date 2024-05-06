@@ -7,63 +7,27 @@ import { useForm, ValidationError } from '@formspree/react';
 
 function Contactform() {
 
-    const [state, handleSubmit] = useForm("mwkgozgj");
+    const [state, handleSubmit] = useForm("xbjnwwpn");
     if (state.succeeded) {
         return <p className='form-alert-pra'>Your message is on its way to me! Expect a reply soon.</p>;
     }
 
     return (
         <>
-            <div className="container">
-                <div className="contact-form" id="contact-form">
+            <div className="contact-form" id="contact-form">
+                <div className="container">
                     <div className="row">
-                        <div className="col-lg-4 col-md-8 col-sm-12">
-                            <div className="contact-form-detail">
-                                <h5>Get In Touch</h5>
-                                <h1>Let’s Talk For your</h1>
-                                <h2>Website Projects</h2>
-                                <p>Sed ut perspiciatis unde omnin natus totam rem aperiam eaque inventore veritatis</p>
-                            </div>
-                            <div>
-                                <div className='experience-detail mt-3'>
-                                    <span>
-                                        <FaCheck />
-                                    </span>
-                                    <h5>3+ Years Of Experience</h5>
-                                </div>
-                                <div className='experience-detail'>
-                                    <span>
-                                        <FaCheck />
-                                    </span>
-                                    <h5>Professional Web Developer</h5>
-                                </div>
-                                <div className='experience-detail'>
-                                    <span>
-                                        <FaCheck />
-                                    </span>
-                                    <h5>Fast Delivery</h5>
-                                </div>
-                                <div className='experience-detail'>
-                                    <span>
-                                        <FaCheck />
-                                    </span>
-                                    <h5>100% Satisfaction</h5>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div className="col-lg-8 col-sm-12 col-md-12">
+                        <div className="col-lg-6 col-sm-12 col-md-12">
                             <form onSubmit={handleSubmit}>
                                 <div className="row ">
-                                    <div className="col-lg-6 col-md-12 col-sm-12">
+                                    <div className="col-lg-12 col-md-12 col-sm-12">
                                         <div className='mt-3'>
-                                            <label htmlFor='name'>Full Name</label>
                                             <div className='input-with-icon' >
                                                 <input
                                                     id='name'
                                                     type='name'
                                                     name='name'
-                                                    placeholder="Please enter your name"
+                                                    placeholder="Name"
                                                 />
                                                 <ValidationError
                                                     prefix="Name"
@@ -77,9 +41,8 @@ function Contactform() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-12">
+                                    <div className="col-lg-12 col-md-12 col-sm-12">
                                         <div className='mt-3'>
-                                            <label htmlFor='email'>Email Address</label>
                                             <div className='input-with-icon'>
 
                                                 <input
@@ -100,9 +63,8 @@ function Contactform() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-12">
+                                    <div className="col-lg-12 col-md-12 col-sm-12">
                                         <div className='mt-4'>
-                                            <label htmlFor='number'>Phone Number</label>
                                             <div className='input-with-icon'>
                                                 <input
                                                     type="text"
@@ -122,9 +84,8 @@ function Contactform() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-12">
+                                    <div className="col-lg-12 col-md-12 col-sm-12">
                                         <div className='mt-4'>
-                                            <label htmlFor='subject'>Subject</label>
                                             <div className='input-with-icon'>
                                                 <input
                                                     type="text"
@@ -146,12 +107,12 @@ function Contactform() {
                                         </div>
                                     </div>
                                     <div className='mt-4'>
-                                        <label>Message</label>
                                         <div>
                                             <textarea
                                                 placeholder="write message"
                                                 id="message"
                                                 name="message"
+
                                             ></textarea>
                                             <ValidationError
                                                 prefix="Message"
@@ -166,8 +127,18 @@ function Contactform() {
                                     type="submit" disabled={state.submitting}
                                 >
                                     Send Me Message
-                                    <span className="arrow-icon"><MdNavigateNext /></span></button>
+                                </button>
                             </form>
+
+
+                        </div>
+                        <div className="col-lg-6 col-md-12 col-sm-12">
+                            <div class="map-responsive">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.1414223033336!2d73.1443823!3d33.5988047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9232e160f69d%3A0x2c6d2f1f3f162693!2s33%C2%B035'55.7%22N%2073%C2%B008'49.1%22E!5e0!3m2!1sen!2suk!4v1649297445725!5m2!1sen!2suk"
+                                    frameborder="0"
+                                    allowfullscreen></iframe>
+                            </div>
 
 
                         </div>

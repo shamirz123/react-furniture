@@ -8,10 +8,10 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 function Footer() {
     const whatsappProps = {
-        accountName: 'Shahmeer Zubair',
-        phoneNumber: '+92 3115386005',
-        darkMode: true,
-        avatar: '/assets/img/profile.JPEG',
+        accountName: 'LSFurniture',
+        phoneNumber: '+92 331569774',
+        darkMode: false,
+        avatar: '/assets/img/favicon.svg',
         notification: true,
     }
     return (
@@ -20,7 +20,9 @@ function Footer() {
                 <div className="footer-section-wrapper">
                     <div className="row">
                         <div className="col-lg-3 col-md-6 col-sm-12">
-                            <img src="/assets/img/logo.svg" alt="" />
+                            <img src="/assets/img/logo.svg" style={{
+                                width:"140px"
+                            }}/>
                         </div>
                         <div className="col-lg-5 col-md-6 col-sm-12">
                             <div className="quick-link">

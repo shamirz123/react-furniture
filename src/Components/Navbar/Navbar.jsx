@@ -63,36 +63,6 @@ function Navbar() {
                                 Services
                             </ScrollLink>
                         </li>
-                        <li className="nav-item">
-                            <ScrollLink
-                                to="skills"
-                                smooth={true}
-                                duration={500}
-                                className="nav-link"
-                            >
-                                Skills
-                            </ScrollLink>
-                        </li>
-                        <li className="nav-item">
-                            <ScrollLink
-                                to="pricing"
-                                smooth={true}
-                                duration={500}
-                                className="nav-link"
-                            >
-                                Pricing
-                            </ScrollLink>
-                        </li>
-                        <li className="nav-item">
-                            <ScrollLink
-                                to="projects"
-                                smooth={true}
-                                duration={500}
-                                className="nav-link"
-                            >
-                                Projects
-                            </ScrollLink>
-                        </li>
                         
                     </ul>
                     <div className="hamburger" onClick={handleHamburgerClick}>

@@ -45,7 +45,7 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <ScrollLink
-                                to="about"
+                                to="contact-us"
                                 smooth={true}
                                 duration={500}
                                 className="nav-link"

@@ -52,13 +52,13 @@ function Footer() {
                                     <span>
                                         <MdOutlineMail />
                                     </span>
-                                    <p className='ml-3'>shahmeerzubair299@gmail.com</p>
+                                    <p className='ml-3'>lifestandardfurniture@gmail.com</p>
                                 </div>
                                 <div className='d-flex'>
                                     <span>
                                         <IoMdCall />
                                     </span>
-                                    <p className='ml-3'>+92 3115386005</p>
+                                    <p className='ml-3'>+92 331-5629774</p>
                                 </div>
                             </div>
                         </div>

@@ -30,7 +30,7 @@ function Home() {
            
 
         
-            <section className='contact-form-section'>
+            <section className='contact-form-section' id='contact-us'>
                 <Contactform />
             </section>
             

@@ -4,7 +4,6 @@ import Navbar from '../Navbar/Navbar';
 import About from '../About/About';
 import Services from '../Servics/Services';
 import Skill from '../Skills/Skill';
-import Testimonial from '../Testimonial/Testimonial';
 import Project from '../Projects/Project';
 import Pricing from '../Pricing/Pricing';
 import Contactform from '../ContactForm/Contactform';

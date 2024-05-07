@@ -593,7 +593,7 @@ nav {
 }
 
 .image-box1:hover img {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 .dropdown-content1 {
@@ -609,7 +609,7 @@ nav {
 .name-desc {
   overflow: hidden;
   position: initial;
-  background: #4B5956;
+  background: #DBD9D8;
 }
 
 .rounded {
@@ -630,12 +630,22 @@ nav {
   background: #4B5956;
   width: 100%;
   color: #FFF;
+  border-radius: 10px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
 }
 
 .hover-1-description {
   transform: translateY(0.5rem);
   transition: all 0.4s;
   opacity: 0;
+}
+.hover-1-description a {
+  text-decoration: none;
+  color: #000;
+  text-align: left;
+  float: left;
+  margin-top: 10px;
 }
 
 .hover-1:hover .hover-1-content {
@@ -681,7 +691,83 @@ nav {
   background: #4B5956 !important;
 }
 
+
+.chair-carousel {
+  margin-bottom: 20px;
+}
+
+.chair-image {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.chair-image:hover {
+  transform: scale(1.05);
+}
+
+.chair-details {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.chair-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.chair-btn:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
 /* Services Section End  */
+
+/* ChairsDetail Section */
+
+.chairs-wrappers {
+  background: #E0E0E0 !important;
+}
+
+.card img {
+  width: 100%;
+}
+
+
+.chairs-wrappers .left-bar {
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.small-images {
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  width: 140px ;
+  height: 110px;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.small-images:hover {
+  opacity: 0.5;
+}
+
+
+.carousel-control-prev-icon {
+  color: #4B5956;
+}
+.cus-carousel-inner {
+  background-repeat: no-repeat !important;
+}
+
+
+
+/* ChairsDetail Section End */
 
 /* #4B5956 */
 /* skill-section */
@@ -1606,28 +1692,6 @@ ul {
   .footer-section-wrapper {
     padding: 40px 10px 40px;
   }
-
-
-  /* .social-handle ul {
-    display: flex;
-    gap: 30px;
-    margin-top: 20px;
-    position: absolute;
-    right: 30px;
-    padding-bottom: 40px;
-  }
-  .quick-link h5 {
-    margin-top: 30px !important;
-  }
-  .quick-link ul {
-    display: flex;
-    gap: 30px;
-    padding-left: 0px !important;
-  }
-  .footer-contact h5 {
-    margin-top: 40px !important;
-    margin-bottom: 30px !important;
-  } */
 
 
 

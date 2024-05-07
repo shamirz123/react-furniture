@@ -33,13 +33,10 @@ function Footer() {
                                             <Link to="services" smooth={true} duration={500}>Service</Link>
                                         </li>
                                         <li>
-                                            <Link to="projects" smooth={true} duration={500}>Projects</Link>
+                                            <Link to="about" smooth={true} duration={500}>About Us</Link>
                                         </li>
                                         <li>
-                                            <Link to="pricing" smooth={true} duration={500}>Pricing</Link>
-                                        </li>
-                                        <li>
-                                            <Link to="contact" smooth={true} duration={500}>Contact</Link>
+                                            <Link to="contact-us" smooth={true} duration={500}>Contact</Link>
                                         </li>
                                     </ul>
                                 </div>

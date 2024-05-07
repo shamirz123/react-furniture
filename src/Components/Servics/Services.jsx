@@ -5,27 +5,29 @@ import { Link } from 'react-router-dom';
 import '../main.css'
 
 function Services() {
-    // Define an array of objects containing image URLs and other information
+    // Define an array of objects containing image URLs, titles, descriptions, and links
     const images = [
         {
             id: 1,
             url: '/assets/img/slider-chair.webp',
             title: 'Chair',
-            desc: 'Sleek and comfortable chair for modern living spaces.'
+            desc: 'Sleek and comfortable chair for modern living spaces.',
+            link: '/chairs-detail' // Add a link for the chair
         },
         {
             id: 2,
             url: '/assets/img/slider-sofa.webp',
             title: 'Sofa',
-            desc: 'Luxurious sofa for stylish relaxation'
+            desc: 'Luxurious sofa for stylish relaxation',
+            link: '/sofa-detail' // Add a link for the sofa
         },
         {
             id: 3,
             url: '/assets/img/slider-bed.webp',
             title: 'Bed',
-            desc: 'Elegant bed frame for a cozy bedroom ambiance.'
+            desc: 'Elegant bed frame for a cozy bedroom ambiance.',
+            link: '/beds-detail' // Add a link for the bed
         },
-
     ];
 
     return (
@@ -98,7 +100,7 @@ function Services() {
                                                 </a>
                                             </div>
                                             <div className="hover-1-content p-2">
-                                            <div className="sub-txt-desc float-left pl-2">
+                                                <div className="sub-txt-desc float-left pl-2">
                                                     {image.title}
                                                 </div>
                                                 <br />
@@ -107,7 +109,7 @@ function Services() {
                                                 </div>
                                                 <br />
                                                 <p className="hover-1-description float-left mb-0">
-                                                    <Link to="">
+                                                    <Link to={image.link}>
                                                         <strong>Learn More</strong>{" "}
                                                         <i className="fa fa-angle-double-right"></i>{" "}
                                                     </Link>

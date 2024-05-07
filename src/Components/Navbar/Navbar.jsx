@@ -1,6 +1,7 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import "../../Components/main.css";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
@@ -20,7 +21,13 @@ function Navbar() {
                         duration={500}
                         className="navbar-brand"
                     >
-                        <img src="/assets/img/logo.svg" alt="" />
+                        <Link to="/">
+                            <img
+                                src="/assets/img/logo.svg"
+                                alt="Logo Image"
+                            />
+                        </Link>
+
                     </ScrollLink>
                     <ul className={`nav-list ${isHamburgerActive ? 'active' : ''}`}>
                         <li className="nav-item">
@@ -63,7 +70,7 @@ function Navbar() {
                                 Services
                             </ScrollLink>
                         </li>
-                        
+
                     </ul>
                     <div className="hamburger" onClick={handleHamburgerClick}>
                         <div className="line"></div>

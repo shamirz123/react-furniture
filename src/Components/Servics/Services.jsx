@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from 'react-router-dom';
 import '../main.css'
 
 function Services() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      });
     // Define an array of objects containing image URLs, titles, descriptions, and links
     const images = [
         {
@@ -101,11 +105,11 @@ function Services() {
                                             </div>
                                             <div className="hover-1-content p-2">
                                                 <div className="sub-txt-desc float-left pl-2">
-                                                    {image.title}
+                                                    <h4>{image.title}</h4>
                                                 </div>
                                                 <br />
                                                 <div className="sub-txt-desc float-left pl-2">
-                                                    {image.desc}
+                                                   <p className='mb-0'> {image.desc} </p>
                                                 </div>
                                                 <br />
                                                 <p className="hover-1-description float-left mb-0">

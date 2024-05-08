@@ -133,11 +133,11 @@ function Contactform() {
 
                         </div>
                         <div className="col-lg-6 col-md-12 col-sm-12">
-                            <div class="map-responsive">
+                            <div className="map-responsive">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.1414223033336!2d73.1443823!3d33.5988047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df9232e160f69d%3A0x2c6d2f1f3f162693!2s33%C2%B035'55.7%22N%2073%C2%B008'49.1%22E!5e0!3m2!1sen!2suk!4v1649297445725!5m2!1sen!2suk"
-                                    frameborder="0"
-                                    allowfullscreen></iframe>
+                                   
+                                    ></iframe>
                             </div>
 
 

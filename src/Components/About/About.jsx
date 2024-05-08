@@ -18,11 +18,11 @@ function About() {
           <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-13">
               <div className="about-us-wrapper">
-                <div class="d-flex flex-row bd-highlight mb-3">
-                  <div class="p-2 bd-highlight">
+                <div className="d-flex flex-row bd-highlight mb-3">
+                  <div className="p-2 bd-highlight">
                     <h4>About Us</h4>
                   </div>
-                  <div class="p-2 bd-highlight">
+                  <div className="p-2 bd-highlight">
                     <hr
                       style={{
                         border: "2px  solid #FEAB43",

@@ -7,6 +7,7 @@ import {
   CarouselItem as CCarouselItem,
   Image as CImage,
 } from "react-bootstrap";
+import TabsComponent from "../TabsComponent/Tabs";
 
 function Main() {
   const [activeIndex, setActiveIndex] = useState(0);

@@ -2,14 +2,33 @@ import React, { useState } from 'react'
 import "../../Components/main.css";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
-function Navbar() {
+function MobileNav() {
     const [isHamburgerActive, setHamburgerActive] = useState(false);
 
     const handleHamburgerClick = () => {
         setHamburgerActive(!isHamburgerActive);
     };
+
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    const handleScrollToSection = (sectionId) => {
+        handleClose(); // Close the Offcanvas
+        const element = document.getElementById(sectionId);
+        if (element) {
+            window.scrollTo({
+                top: element.offsetTop,
+                behavior: "smooth"
+            });
+        }
+    };
+
 
     return (
         <header className='navbar-header'>
@@ -29,7 +48,7 @@ function Navbar() {
                         </Link>
 
                     </ScrollLink>
-                    <ul className={`nav-list ${isHamburgerActive ? 'active' : ''}`}>
+                    {/* <ul className={`nav-list ${isHamburgerActive ? 'active' : ''}`}>
                         <li className="nav-item">
                             <ScrollLink
                                 to="home"
@@ -71,8 +90,39 @@ function Navbar() {
                             </ScrollLink>
                         </li>
 
-                    </ul>
-                    <div className="hamburger" onClick={handleHamburgerClick} >
+                    </ul> */}
+                    <Offcanvas show={show} onHide={handleClose} backdrop="static">
+                        <Offcanvas.Header closeButton>
+                            <Offcanvas.Title>
+                                <img
+                                    className='Logo-image-mobile'
+                                    src="/assets/img/logo.svg"
+                                    alt="LogoImage"
+                                />
+                            </Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                            <ul>
+                                <li>Home</li>
+                                <li onClick={() => handleScrollToSection('about')}>
+                                    <ScrollLink to='about' smooth={true} duration={500} onClick={handleClose}>
+                                        About
+                                    </ScrollLink>
+                                </li>
+                                <li onClick={() => handleScrollToSection('contact-us')}>
+                                    <ScrollLink to='contact-us' smooth={true} duration={500} onClick={handleClose}>
+                                        Contact
+                                    </ScrollLink>
+                                </li>
+                                <li onClick={() => handleScrollToSection('services')}>
+                                    <ScrollLink to='services' smooth={true} duration={500} onClick={handleClose}>
+                                        Services
+                                    </ScrollLink>
+                                </li>
+                            </ul>
+                        </Offcanvas.Body>
+                    </Offcanvas>
+                    <div className="hamburger" variant="primary" aria-label="Close" onClick={handleShow}>
                         <div className="line"></div>
                         <div className="line"></div>
                         <div className="line"></div>
@@ -84,4 +134,4 @@ function Navbar() {
 }
 
 
-export default Navbar
+export default MobileNav

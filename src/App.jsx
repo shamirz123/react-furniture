@@ -5,12 +5,27 @@ import Beds from './Components/Beds/Beds';
 import Sofa from './Components/Sofas/Sofa';
 import Chairs from './Components/Chairs/Chairs';
 import Table from './Components/Table/Table';
+import AnimatedCursor from 'react-animated-cursor';
 
 function App() {
   return (
     <Router>
       <div>
-      {/* <ReactWhatsapp number="+92 3115386005" message="Hello World!!!" /> */}
+        <AnimatedCursor
+          innerSize={8}
+          outerSize={35}
+          innerScale={1}
+          outerScale={2}
+          outerAlpha={0}
+          hasBlendMode={true}
+          innerStyle={{
+            backgroundColor: 'black'
+          }}
+          outerStyle={{
+            border: '3px solid #303F5A'
+          }}
+        />
+        {/* <ReactWhatsapp number="+92 3115386005" message="Hello World!!!" /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="beds-detail" element={<Beds />} />

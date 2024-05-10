@@ -29,6 +29,12 @@ header {
 nav img {
   width: 120px !important;
 }
+.slide {
+  background-color: rgba(37, 36, 37, 0.3); 
+  width: 70%;
+  padding: 30px;
+}
+
 
 .containerrr {
   width: 100% !important;
@@ -235,13 +241,13 @@ nav {
 .carousel-item-content h2 {
   font-size: 55px !important;
   font-weight: bolder;
-  color: #4B5956;
+  color: #252425;
 }
 
 .carousel-item-heading {
   font-size: 60px !important;
   margin-bottom: 0px;
-  color: #4B5956;
+  color: #252425;
   font-weight: bolder;
 }
 
@@ -249,6 +255,7 @@ nav {
   font-size: 18px;
   width: 40rem;
   text-align: justify;
+  color: #000;
 }
 
 .carousel-wrapper {
@@ -256,6 +263,7 @@ nav {
 }
 
 .carousel-dots {
+  display: none !important;
   list-style: none;
   padding: 0;
   display: flex;
@@ -1777,11 +1785,22 @@ button {
     display: none;
   }
 
-  .navbar-header nav {
+  /* .navbar-header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
+  .hamburger {
+    width: 3.6rem;
+    height: 1.8rem;
+    position: relative;
+    cursor: pointer;
+    right: 2px !important;
+    line-height: 5rem;
+    z-index: 1500;
+}
+  
+
 
   .nav-link {
     display: none !important;
@@ -1798,7 +1817,27 @@ button {
   .introduction-section h1 {
     font-size: 26px !important;
   }
+  .offcanvas-body ul li {
+   padding-bottom: 40px !important;
+  }
 
+  .offcanvas-start  {
+    width: 70% !important;
+  }
+  .offcanvas-body {
+    background: #0F1621 !important;
+    color: #FFFFFF;
+  }
+  .Logo-image-mobile {
+    width: 80px !important;
+  }
+  .offcanvas-header {
+    background-color: #252425;
+    padding: 22px;
+  }
+   .btn-close {
+    color: #FFF !important;
+  }
   /* intro section end */
 
   /* About Us section */
@@ -1993,3 +2032,55 @@ button {
 }
 
 /* Whatsaap */
+
+
+/* scroll-animaion */
+
+/* main.css */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+
+
+/* Services Animation */
+/* main.css */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-animation1 {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.card-animation2 {
+  animation: fadeInUp 0.5s ease-out forwards 0.2s; /* Add delay for the second card */
+}
+
+.card-animation3 {
+  animation: fadeInUp 0.5s ease-out forwards 0.4s; /* Add delay for the third card */
+}
+
+.card-animation4 {
+  animation: fadeInUp 0.5s ease-out forwards 0.6s; /* Add delay for the fourth card */
+}
+
+/* Services Animation */

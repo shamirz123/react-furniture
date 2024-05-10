@@ -549,7 +549,7 @@ nav {
 .services-section {
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
-  background: #DBD9D8;
+  background: #0F1621;
   padding: 140px !important;
   height: 100vh !important;
 }
@@ -569,6 +569,7 @@ nav {
   height: auto;
   transform: scale(1);
   height: 327px;
+  border-radius: 10px;
 }
 
 .image-box:hover img {
@@ -609,7 +610,7 @@ nav {
 .name-desc {
   overflow: hidden;
   position: initial;
-  background: #DBD9D8;
+  background: #0F1621;
 }
 
 .rounded {
@@ -627,7 +628,7 @@ nav {
   left: 0;
   z-index: 99;
   transition: all 0.4s;
-  background: #4B5956;
+  background: #3C4C6A;
   width: 100%;
   color: #FFF;
   border-radius: 10px !important;

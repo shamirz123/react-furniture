@@ -32,6 +32,13 @@ function Services() {
             desc: 'Elegant bed frame for a cozy bedroom ambiance.',
             link: '/beds-detail' // Add a link for the bed
         },
+        {
+            id: 4,
+            url: '/assets/img/slider-bed.webp',
+            title: 'Tables',
+            desc: 'Upgrade your space with our Elegant Table Frames for a cozy ambiance',
+            link: '/table-detail' // Add a link for the bed
+        },
     ];
 
     return (

@@ -1770,7 +1770,7 @@ button {
 
   /* intro section */
   .hamburger {
-    display: none;
+    /* display: none; */
   }
 
   .nav-list.active {

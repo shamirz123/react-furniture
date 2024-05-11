@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { TiTick } from "react-icons/ti";
-import { IoMailOutline } from "react-icons/io5";
-import { LuPhone } from "react-icons/lu";
-import { FaCheck } from "react-icons/fa";
 import "../../Components/main.css";
 
 function About() {

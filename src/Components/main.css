@@ -731,9 +731,17 @@ nav {
 
 /* ChairsDetail Section */
 
-.chairs-wrappers {
-  background: #e0e0e0 !important;
+.img-carousel-wrapper {
+
+  background: #F5F5F5;
 }
+.carousel-detail-wrapper {
+  background: #E6E8EF;
+}
+
+/* .chairs-wrappers {
+  background: #e0e0e0 !important;
+} */
 
 .card img {
   width: 100%;
@@ -852,11 +860,26 @@ nav {
 }
 
 .furniture-detail button {
-  border: 1px solid #b4b1b4;
-  padding: 7px 8px;
-  background-color: #e1e8ee;
-  /*   border-radius: 6px; */
-  cursor: pointer;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 9px;
+  padding: 7px 15px 7px;
+  margin-right: 20px;
+  transition: background 0.7s;
+}
+.furniture-detail .btn--plus {
+  background: #252425 !important;
+  color: #FFF !important;
+}
+.furniture-detail .btn--plus:hover {
+  background: transparent !important;
+  color: #000 !important;
+  border: 1px solid #252425;
+}
+.furniture-detail .btn--minus:hover {
+  background: #252425 !important;
+  color: #fff !important;
+  border: 1px solid #252425;
 }
 
 .furniture-detail del {
@@ -1633,3 +1656,38 @@ button {
 }
 
 /* service cards */
+
+.cart-btn {
+  background: #F5F5F4 !important;
+  padding: 10px 20px  !important;
+  border: 1px solid #F0F0F0 !important;
+  color: #000 !important;
+  font-weight: bolder !important;
+  box-shadow: 0 10px 10px -5px #4B5956;
+  border-radius: 10px !important;
+  transition: background 0.7s;
+
+
+}
+.buy-btn {
+  background: #252525 !important;
+  padding: 10px 20px  !important;
+  border: 1px solid #252425 !important;
+  color: #fff !important;
+  font-weight: bolder !important;
+  box-shadow: 0 10px 10px -5px #4B5956;
+  border-radius: 10px !important;
+  transition: background 0.7s;
+}
+.buy-btn:hover {
+  background: transparent !important;
+  border: 1px solid #252425 !important;
+  color: #000 !important;
+
+}
+.cart-btn:hover {
+  background: #252525 !important;
+  border: 1px solid #252425 !important;
+  color: #fff !important;
+
+}

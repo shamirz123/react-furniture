@@ -298,11 +298,11 @@ function Beds() {
 
                 <div className="d-flex flex-row">
                   <div className="p-2">
-                    <del className="">Rs.53000 </del>
+                    <b className="">Rs.65000 </b>
                   </div>
-                  <div className="p-2">
+                  {/* <div className="p-2">
                     <b className="">Rs.45000</b>
-                  </div>
+                  </div> */}
                   <div className="p-2">
                     <button className="t4s-badge-price">SAVE 15%</button>
                   </div>

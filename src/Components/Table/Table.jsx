@@ -297,11 +297,9 @@ function Table() {
                 <h1 className="mt-5">Table's</h1>
 
                 <div className="d-flex flex-row">
+                  
                   <div className="p-2">
-                    <del className="">Rs.53000 </del>
-                  </div>
-                  <div className="p-2">
-                    <b className="">Rs.45000</b>
+                    <b className="">Rs.75000</b>
                   </div>
                   <div className="p-2">
                     <button className="t4s-badge-price">SAVE 15%</button>

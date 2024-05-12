@@ -115,18 +115,18 @@ function Contactform() {
                         <div className="right_conatct_social_icon d-flex align-items-end">
                           <div className="socil_item_inner d-flex">
                             <li>
-                              <a href="#">
+                              <a href="https://www.facebook.com/share/7LdhZBuNThcNp6m5/?mibextid=LQQJ4d">
                                 <i className="fab fa-facebook-square"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="#">
+                              <a href="https://www.instagram.com/_.lifestandard._?igsh=MW01OXMyeG5pbXZxeA%3D%3D&utm_source=qr">
                                 <i className="fab fa-instagram"></i>
                               </a>
                             </li>
                             <li>
-                              <a href="#">
-                                <i className="fab fa-twitter"></i>
+                              <a href="https://www.youtube.com/@LifestandardFurniture">
+                                <i className="fab fa-youtube"></i>
                               </a>
                             </li>
                           </div>

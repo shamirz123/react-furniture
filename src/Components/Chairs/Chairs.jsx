@@ -22,6 +22,18 @@ function Chairs() {
 
   const [loading, setLoading] = useState(false);
   const [counter, setCounter] = useState(1);
+  const [originalPrice, setOriginalPrice] = useState(53000);
+  const [discountedPrice, setDiscountedPrice] = useState(43000);
+  const [percentageSaved, setPercentageSaved] = useState(0)
+
+  // console.log("dsdsdssds", Math.floor( Math.random()* 50000))
+
+  useEffect(() => {
+    const saveAmount = originalPrice - discountedPrice;
+    const percentage = ((saveAmount / originalPrice) * 100).toFixed(2)
+    setPercentageSaved(percentage)
+  }, [originalPrice, discountedPrice])
+  
 
   const changeCounter = (num) => {
     setCounter((prevCounter) => {
@@ -301,13 +313,13 @@ function Chairs() {
 
                 <div className="d-flex flex-row">
                   <div className="p-2">
-                    <del className="">Rs.53000 </del>
+                    <del className="">{originalPrice}</del>
                   </div>
                   <div className="p-2">
-                    <b className="">Rs.45000</b>
+                    <b className="">{discountedPrice}</b>
                   </div>
                   <div className="p-2">
-                    <button className="t4s-badge-price">SAVE 15%</button>
+                    <button className="t4s-badge-price">SAVE {percentageSaved}%</button>
                   </div>
                 </div>
 

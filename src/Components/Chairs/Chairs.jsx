@@ -66,7 +66,6 @@ function Chairs() {
   return (
     <>
       <div className="chairs-wrappers">
-        <Navbar />
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-12">
@@ -310,10 +309,12 @@ function Chairs() {
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="furniture-detail">
                 <h1 className="mt-5">Dining chairs</h1>
+                
 
                 <div className="d-flex flex-row">
                   <div className="p-2">
                     <del className="">{originalPrice}</del>
+
                   </div>
                   <div className="p-2">
                     <b className="">{discountedPrice}</b>

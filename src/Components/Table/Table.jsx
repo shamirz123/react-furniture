@@ -54,7 +54,6 @@ function Table() {
   return (
     <>
       <div className="chairs-wrappers">
-        <Navbar />
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-12 col-sm-12">

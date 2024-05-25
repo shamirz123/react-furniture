@@ -9,6 +9,7 @@ body {
   font-family: Poppins, sans-serif;
 }
 
+
 :root {
   --color-cursor: 220, 90, 90;
   --cursor-outline-shade: 0.3;
@@ -607,7 +608,7 @@ nav {
   overflow: hidden;
   position: initial;
   background: #ffffff;
-  border-radius: 20px !important ;
+  border-radius: 20px !important;
 }
 
 .overlay {
@@ -633,7 +634,8 @@ nav {
 }
 
 .work1:hover .overlay {
-  transform: translateY(0); /* Move overlay from bottom to top */
+  transform: translateY(0);
+  /* Move overlay from bottom to top */
 }
 
 .work1:hover .overlay {
@@ -665,6 +667,7 @@ nav {
   position: absolute;
   left: 0;
 }
+
 .learn-more-btn {
   background: rgb(254, 171, 67);
   color: #fff;
@@ -735,6 +738,7 @@ nav {
 
   background: #F5F5F5;
 }
+
 .carousel-detail-wrapper {
   background: #E6E8EF;
 }
@@ -751,6 +755,7 @@ nav {
   margin-top: 20px;
   border-radius: 20px;
 }
+
 .small-images {
   transition: opacity 0.3s ease-in-out;
   cursor: pointer;
@@ -791,6 +796,7 @@ nav {
 .carousel-control-next:hover {
   background-color: #4b5956 !important;
 }
+
 .carousel-control-prev:hover {
   background-color: #4b5956 !important;
 }
@@ -805,6 +811,7 @@ nav {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -817,6 +824,7 @@ nav {
   outline: none;
   color: white;
 }
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   display: inline-block;
@@ -841,13 +849,39 @@ nav {
   font-weight: 600;
   font-size: 30px;
 }
+
 .furniture-detail h1 {
   font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
 }
+
 .add-to-cart {
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
+
+.cart-add {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.cart-count {
+  position: absolute;
+  background-color: #ff3300;
+  color: #fff;
+  top: 1px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 12px;
+  right: -10px;
+
+}
+
 .quantity {
   border: none;
   text-align: center;
@@ -867,15 +901,18 @@ nav {
   margin-right: 20px;
   transition: background 0.7s;
 }
+
 .furniture-detail .btn--plus {
   background: #252425 !important;
   color: #FFF !important;
 }
+
 .furniture-detail .btn--plus:hover {
   background: transparent !important;
   color: #000 !important;
   border: 1px solid #252425;
 }
+
 .furniture-detail .btn--minus:hover {
   background: #252425 !important;
   color: #fff !important;
@@ -887,11 +924,13 @@ nav {
   font-weight: 600;
   font-size: 22px;
 }
+
 .furniture-detail b {
   color: red;
   font-weight: 600;
   font-size: 22px;
 }
+
 .furniture-detail .t4s-badge-price {
   color: white;
   background-color: #4b5956;
@@ -917,6 +956,7 @@ nav {
   color: #4b5956;
   font-size: 15px;
 }
+
 .furniture-detail .note-heading {
   font-size: 22px;
   padding: 15px 0px 0px;
@@ -964,6 +1004,7 @@ input:focus {
   margin-top: 30px;
   padding-top: 40px;
 }
+
 .tabs-detail h3 {
   margin-top: 20px;
   font-size: 22px;
@@ -971,45 +1012,53 @@ input:focus {
   font-weight: bold;
   list-style: 1.4px;
 }
+
 .tabs-detail h4 {
   font-size: 18px;
   color: #000;
   font-weight: bold;
   list-style: 1.4px;
 }
+
 .tabs-detail p {
   font-size: 14px;
   font-family: "Poppins";
   color: #878787;
 }
+
 .tabs-detail ul {
   padding-bottom: 30px;
   padding-left: 12px;
 }
+
 .tabs-detail ul li {
   list-style: disc;
   color: #878787;
 }
 
-.table > :not(caption) > * > * {
+.table> :not(caption)>*>* {
   background-color: #e0e0e0;
   border: 1px solid #4b5956;
   color: #878787;
   border-radius: 10px !important;
 }
+
 .shipping-detail {
   margin-top: 30px;
   padding-bottom: 30px;
 }
+
 .shipping-detail strong {
   font-family: "Poppins";
   font-size: 16px;
   color: #878787;
   font-weight: 600;
 }
+
 .shipping-detail ul {
   padding: 0px !important;
 }
+
 .shipping-detail ul li {
   color: #878787;
   font-size: 14px;
@@ -1028,10 +1077,12 @@ input:focus {
   font-size: 22px;
   padding-bottom: 20px;
 }
+
 .sub-txt-desc p {
   font-size: 13px;
   font-weight: normal;
 }
+
 /* ChairsDetail Section End */
 
 /* #4B5956 */
@@ -1040,10 +1091,12 @@ input:focus {
 
 .arrow-icon {
   margin-left: 10px !important;
-} 
+}
+
 .right_conatct_social_icon {
   background: linear-gradient(to top right, #1a237e -5%, #6a1b9a 100%);
 }
+
 .contact_us {
   padding: 120px 0px;
 }
@@ -1054,9 +1107,11 @@ input:focus {
   box-shadow: 20px 22px 44px #cccc;
   border-radius: 25px;
 }
+
 .contact_field {
   padding: 60px 340px 90px 100px;
 }
+
 .right_conatct_social_icon {
   height: 100%;
 }
@@ -1068,6 +1123,7 @@ input:focus {
   font-weight: 600;
   margin-bottom: 10px;
 }
+
 .contact_field p {
   color: #000;
   font-size: 13px;
@@ -1075,16 +1131,19 @@ input:focus {
   letter-spacing: 1px;
   margin-bottom: 35px;
 }
+
 .contact_field .form-control {
   border-radius: 0px;
   border: none;
   border-bottom: 1px solid #ccc;
 }
+
 .contact_field .form-control:focus {
   box-shadow: none;
   outline: none;
   border-bottom: 2px solid #1325e8;
 }
+
 .contact_field .form-control::placeholder {
   font-size: 13px;
   letter-spacing: 1px;
@@ -1101,6 +1160,7 @@ input:focus {
   padding: 40px;
   border-radius: 25px 0 0 25px;
 }
+
 .contact_info_sec h4 {
   letter-spacing: 1px;
   padding-bottom: 15px;
@@ -1109,9 +1169,11 @@ input:focus {
 .info_single {
   margin: 30px 0px;
 }
+
 .info_single i {
   margin-right: 15px;
 }
+
 .info_single span {
   font-size: 14px;
   letter-spacing: 1px;
@@ -1129,17 +1191,21 @@ button.contact_form_submit {
   font-size: 14px;
   letter-spacing: 2px;
 }
+
 .socil_item_inner li {
   list-style: none;
 }
+
 .socil_item_inner li a {
   color: #fff;
   margin: 0px 15px;
   font-size: 14px;
 }
+
 .socil_item_inner {
   padding-bottom: 10px;
 }
+
 /* 
 .map_sec{
  padding: 50px 0px;
@@ -1149,9 +1215,11 @@ button.contact_form_submit {
   color: #000;
   text-align: center;
 }
+
 .map_inner p {
   font-size: 13px;
 }
+
 .map_bind {
   margin-top: 50px;
   border-radius: 30px;
@@ -1308,7 +1376,8 @@ ul {
 
 .map-responsive {
   overflow: hidden;
-  padding-bottom: 100%; /* Aspect ratio of 16:9 (height:width) */
+  padding-bottom: 100%;
+  /* Aspect ratio of 16:9 (height:width) */
   position: relative;
   height: 0;
   margin-top: 12px !important;
@@ -1324,11 +1393,11 @@ ul {
 
 .tabs-detail-btn {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 
 button {
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 @media (min-width: 768px) {
@@ -1341,7 +1410,7 @@ button {
   }
 
   .tabs-detail-btn {
-    flex-direction: row; 
+    flex-direction: row;
   }
 }
 
@@ -1351,15 +1420,19 @@ button {
   .contact_field {
     padding: 17px !important;
   }
+
   .right_conatct_social_icon {
     border-radius: 10px;
   }
+
   .right_conatct_social_icon {
     margin-top: 10px !important;
   }
+
   .contact_info_sec {
     display: none;
   }
+
   .quick-link {
     margin-top: 15px !important;
   }
@@ -1370,6 +1443,7 @@ button {
     color: #252425;
     font-weight: bolder;
   }
+
   .carousel-item-content h2 {
     font-size: 20px !important;
     font-weight: bolder;
@@ -1382,6 +1456,7 @@ button {
     text-align: justify;
     color: #000;
   }
+
   #custCarousel {
     padding: 0px !important;
   }
@@ -1437,6 +1512,7 @@ button {
   .introduction-section h1 {
     font-size: 26px !important;
   }
+
   .offcanvas-body ul li {
     padding-bottom: 40px !important;
   }
@@ -1444,20 +1520,25 @@ button {
   .offcanvas-start {
     width: 70% !important;
   }
+
   .offcanvas-body {
     background: #0f1621 !important;
     color: #ffffff;
   }
+
   .Logo-image-mobile {
     width: 80px !important;
   }
+
   .offcanvas-header {
     background-color: #252425;
     padding: 22px;
   }
+
   .btn-close {
     color: #fff !important;
   }
+
   /* intro section end */
 
   /* About Us section */
@@ -1535,9 +1616,9 @@ button {
 
   /* skill section end */
 
-  
 
- 
+
+
 
   /* project-sections */
 
@@ -1616,6 +1697,7 @@ button {
     opacity: 0;
     transform: translateY(200px);
   }
+
   to {
     opacity: 2;
     transform: translateY(0);
@@ -1633,6 +1715,7 @@ button {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -1644,22 +1727,25 @@ button {
 }
 
 .card-animation2 {
-  animation: fadeInUp 0.5s ease-out forwards 0.2s; /* Add delay for the second card */
+  animation: fadeInUp 0.5s ease-out forwards 0.2s;
+  /* Add delay for the second card */
 }
 
 .card-animation3 {
-  animation: fadeInUp 0.5s ease-out forwards 0.4s; /* Add delay for the third card */
+  animation: fadeInUp 0.5s ease-out forwards 0.4s;
+  /* Add delay for the third card */
 }
 
 .card-animation4 {
-  animation: fadeInUp 0.5s ease-out forwards 0.6s; /* Add delay for the fourth card */
+  animation: fadeInUp 0.5s ease-out forwards 0.6s;
+  /* Add delay for the fourth card */
 }
 
 /* service cards */
 
 .cart-btn {
   background: #F5F5F4 !important;
-  padding: 10px 20px  !important;
+  padding: 10px 20px !important;
   border: 1px solid #F0F0F0 !important;
   color: #000 !important;
   font-weight: bolder !important;
@@ -1669,9 +1755,10 @@ button {
 
 
 }
+
 .buy-btn {
   background: #252525 !important;
-  padding: 10px 20px  !important;
+  padding: 10px 20px !important;
   border: 1px solid #252425 !important;
   color: #fff !important;
   font-weight: bolder !important;
@@ -1679,15 +1766,89 @@ button {
   border-radius: 10px !important;
   transition: background 0.7s;
 }
+
 .buy-btn:hover {
   background: transparent !important;
   border: 1px solid #252425 !important;
   color: #000 !important;
 
 }
+
 .cart-btn:hover {
   background: #252525 !important;
   border: 1px solid #252425 !important;
   color: #fff !important;
 
 }
+
+
+
+/* Detail Navbar Css */
+
+
+
+
+header h1 {
+  color: #AAA;
+  font-size: 40px;
+  font-weight: lighter;
+  margin-bottom: 5px;
+}
+
+header span {
+  color: #222;
+}
+
+.detail-navbar-wrapper a {
+  color: #c4c2c2 !important;
+  text-decoration: none;
+  font: 16px;
+  margin: 0px 61px;
+  padding: 7px 0px;
+  position: relative;
+  font-weight: normal !important;
+  z-index: 0;
+  cursor: pointer;
+}
+
+/* Top and Bottom borders go out */
+.topBotomBordersOut {
+  padding: 7px;
+}
+
+.detail-navbar-wrapper {
+  background: #495877;
+}
+
+
+div.topBotomBordersOut a:before,
+div.topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before,
+div.topBotomBordersOut a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
+
+/* Detail Navbar Css */

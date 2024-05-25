@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home/Home';
 import Beds from './Components/Beds/Beds';
@@ -6,8 +6,24 @@ import Sofa from './Components/Sofas/Sofa';
 import Chairs from './Components/Chairs/Chairs';
 import Table from './Components/Table/Table';
 import AnimatedCursor from 'react-animated-cursor';
+import MobileNav from './Components/MobileNav/MobileNav';
+import Navbar from './Components/Navbar/Navbar';
+import DetailNavbar from './Components/DetailNavbar/DetailNavbar';
 
 function App() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <Router>
       <div>
@@ -25,6 +41,8 @@ function App() {
             border: '3px solid #303F5A'
           }}
         />
+        {isMobile ? <MobileNav /> : <Navbar />}
+        <DetailNavbar />
         {/* <ReactWhatsapp number="+92 3115386005" message="Hello World!!!" /> */}
         <Routes>
           <Route path="/" element={<Home />} />

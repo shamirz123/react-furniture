@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import "../../Components/main.css";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
+import { BsBag } from 'react-icons/bs';
+
 
 
 function Navbar() {
@@ -72,6 +74,7 @@ function Navbar() {
                         </li>
 
                     </ul>
+
                     <div className="hamburger" onClick={handleHamburgerClick} >
                         <div className="line"></div>
                         <div className="line"></div>

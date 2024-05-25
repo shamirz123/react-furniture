@@ -1,41 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../../Components/main.css";
-import Navbar from "../Navbar/Navbar";
 import About from "../About/About";
 import Services from "../Servics/Services";
-import Skill from "../Skills/Skill";
-import Project from "../Projects/Project";
-import Pricing from "../Pricing/Pricing";
 import Contactform from "../ContactForm/Contactform";
 import Footer from "../Footer/Footer";
 import Sociallinks from "../SocialLinks/Sociallinks";
 import Main from "../Main/Main";
-import MobileNav from "../MobileNav/MobileNav";
+
 
 function Home() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <>
-
-      {isMobile ? <MobileNav /> : <Navbar />}
-
       <section className="home-section">
         <Main />
       </section>
+      
+      
       <section className="About-us-Section">
         <About />
       </section>
